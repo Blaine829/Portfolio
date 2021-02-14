@@ -18,9 +18,13 @@ You can view it [here](https://blaine829.github.io/).
 This program interprets the rules and language of a Deterministic Finite Automata.
 
 Line 1: the states of the DFA (separated by commas, if there is more than one state).
+
 Line 2: the alphabet of the DFA (separated by commas, if there is more than one symbol).
+
 Line 3: the starting state of the DFA.
+
 Line 4: the final/accept states of the DFA (separated by commas, if there is more than one accept state).
+
 Line 5 and onward: the transition rules, where each rule takes the form a,b,c (where being in state a and reading symbol b transitions to new state c).
 
 After the program constructs a DFA, it reads in another file called input.txt, where each line in the file is a string that will run on the DFA.
