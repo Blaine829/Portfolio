@@ -1,39 +1,36 @@
-## Welcome to GitHub Pages
+## Blaine Broussard's Portfolio
 
-You can use the [editor on GitHub](https://github.com/Blaine829/Portfolio/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
-### Markdown
 
+## About me
+I am Blaine Broussard, a computer science student at Wofford College. I program mostly in C, C++, and Python, but I am also fluent in HTML/CSS/JavaScript. 
+
+
+
+## Projects 
+
+### D&D Encounter Manager. 
+Through JavaScript and HTML, this web page allows users to create and remove sprites to represent both allies and enemies. These sprites have user defines elements such as Armor Class, Health, and Allegiance which can be changed dynamically. 
 You can view it [here](https://blaine829.github.io/). 
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+### DFA Interpeter
+This program interprets the rules and language of a Deterministic Finite Automata
+Line 1: the states of the DFA (separated by commas, if there is more than one state)
+Line 2: the alphabet of the DFA (separated by commas, if there is more than one symbol)
+Line 3: the starting state of the DFA
+Line 4: the final/accept states of the DFA (separated by commas, if there is more than one accept state)
+Line 5 and onward: the transition rules, where each rule takes the form a,b,c (where being in state a and reading symbol b transitions to new state c)
+After the program constructs a DFA, it reads in another file called input.txt, where each line in the file is a string that will run on the DFA.
+Both dfa.txt and input.txt should be assumed to be in the same directory as the Python program.
+The programs simulates each string in input.txt using your DFA, and write the output (accept or reject) into a new file called output.txt (also in the same directory as your Python program, and each result on a new line).
 
-```markdown
-Syntax highlighted code block
+You can view it [here](https://github.com/Blaine829/Portfolio/tree/main/DFA_Interpreter).
 
-# Header 1
-## Header 2
-### Header 3
 
-- Bulleted
-- List
 
-1. Numbered
-2. List
 
-**Bold** and _Italic_ and `Code` text
 
-[Link](url) and ![Image](src)
 ```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/Blaine829/Portfolio/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+For more information, message me at [LinkedIn](https://www.linkedin.com/in/blainebroussard/), or email me at sheehanblaine@gmail.com. 
