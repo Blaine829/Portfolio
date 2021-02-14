@@ -1,0 +1,153 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <style>
+    body {
+      background-image: url("../Images/dice.jpg");
+      
+    }
+    h1   {
+      color: blue;
+      background-color: black;
+      border:5px;
+      border-width: 10%;
+      width: 30%;
+      margin: auto;
+  
+      
+    }
+
+    #buttonPanel{
+      float:right;
+      background-color: grey;
+      border: 15px;
+      padding: 15px;
+    }
+    #turnOrder{
+
+      background-color: grey;
+      border: 15px;
+      padding-top: 1px;
+      border-top: 1px;
+      padding: 15px;
+      position: absolute;
+      height:100px;
+    }
+    #inputs{
+      float:right;
+      background-color: grey;
+      border: 15px;
+      padding-top: 1px;
+      border-top: 1px;
+      padding: 15px;
+    }
+
+    #Allies{
+      margin: auto;
+      background-color: lightgray;
+      width:50%;
+      font-size: large;
+     
+      border:10px;
+      padding: 3px;
+      height: 300px;
+      
+    }
+    #Enemies{
+      margin: auto;
+      background-color: lightgray;
+      width:50%;
+      font-size: large;
+      
+      border:10px;
+      padding: 3px;
+      height: 300px;
+      
+    }
+
+
+
+
+  </style>
+  <meta charset="utf-8">
+
+  <title>D&D Encounter Creator</title>
+  <meta name="D&D Encounter Builder" content="D&D Encounter Builder">
+  <meta name="Blaine Broussard" content="SitePoint">
+</head>
+
+<body>
+  <h1 style="text-align: center;">D&D Encounter Manager</h1>
+  <div id="buttonPanel">
+      <button id="btnAddCharacter" title="Add character" Name="addCharacter">Create character</button><br>
+      <button id="btnKillCharacter" title="Delete character" Name="killCharacter">Kill Character</button> <br>
+      <button id="btnHealCharacter" title="Heal Character" Name="healCharcter">Heal Character</button><br>
+      <button id="btnHurtCharacter" title="Hurt Character" Name="hurtCharacter">Hurt Character</button><br>
+      <button id="btnClearEnemies" title="Clear Enemies" name="clearEnemies">Clear Enemies</button><br>
+      <button id="btnClearAllies" title="Clear Allies" name="clearAllies">Clear Allies</button><br>
+  <br>
+  </div><br>
+  <div id="turnOrder">
+    <p style="vertical-align: text-top; text-align: center;">Turn Order:</p>
+
+  </div>
+  <div id="inputs">
+    <div id="createInput" class="inner">
+      <form>
+      <input id="createName" name="Name" type="text" placeholder="Character name:"><br>
+      <input id="createAC" name="AC" type="text" placeholder="Character AC:"><br>
+      <input id="createHealth" name="Health" type="text" placeholder="Character Health"><br>
+      
+      <input id="createAlly" name="Allegiance" type="radio" value="Ally"><label for="createAlly">Ally</label><br>
+      
+      <input id="createEnemy" name="Allegiance" type="radio" value="Enemy"><label for="createEnemy">Enemy</label><br>
+      
+      <button id="btnCreate">Create</button>
+      
+      </form>
+    </div>
+    <div id="killInput" class="inner">
+      <input id="killName" name="Name" type="text" placeholder="Character name:"><br>
+      <button id="btnKill">Kill</button><br>
+
+    </div>
+    <div id="healInput" class="inner">
+      <input id="healName" name="Name" type="text" placeholder="Character to heal:"><br>
+      <input id="healAmount" name="Name" type="number" placeholder="How much:"><br>
+      <button id="btnHeal">Heal</button><br>
+
+    </div>
+    <div id="hurtInput" class="inner">
+      <input id="hurtName" name="Name" type="text" placeholder="Character to hurt:"><br>
+      <input id="hurtAmount" name="Name" type="number" placeholder="How much:"><br>
+      <button id="btnHurt">Hurt</button><br>
+
+    </div>
+  </div>
+  <div id="Allies">
+        <p style="vertical-align: text-top; text-align: center;">Allies</p>
+    
+  </div>
+ 
+    <br>
+
+  <div id="Enemies">
+      <p style="vertical-align: top; text-align: center;">Enemies</p>
+      
+  </div>
+
+  
+  
+    
+
+  </div>
+
+
+  <script src="js/scripts.js">
+      const btnCreate = document.getElementById("btnAddCharacter");
+      const btnKill = document.getElementById("btnKillCharacter")
+      const btnHeal = document.getElementById("btnHealCharacter")
+  </script>
+</body>
+</html>
